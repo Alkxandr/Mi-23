@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Una historia que encontró el camino de regreso." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#080a1d" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="Para nosotros" />
+    <meta property="og:description" content="A veces el destino espera el momento correcto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Para nosotros" />
+    <meta name="twitter:description" content="A veces el destino espera el momento correcto." />
+    <meta name="twitter:image" content="assets/images/og-cover.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Para nosotros</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#chapter-1">Ir a la historia</a>
+
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__moon"></div>
+      <div class="ambient__glow ambient__glow--one"></div>
+      <div class="ambient__glow ambient__glow--two"></div>
+      <div class="ambient__stars" id="ambient-stars"></div>
+    </div>
+
+    <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Reproducir música">
+      <span class="sound-toggle__icon" aria-hidden="true">♫</span>
+      <span class="sound-toggle__label">Reproducir música</span>
+    </button>
+    <audio id="background-music" preload="none" loop>
+      <source src="assets/audio/nuestra-cancion.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main id="experience" aria-label="Una historia para nosotros">
+      <section class="chapter chapter--opening" id="chapter-1" data-chapter="1">
+        <div class="chapter__content opening-copy">
+          <p class="eyebrow">Una historia para nosotros</p>
+          <h1>No todas las historias terminan<br />cuando creemos.</h1>
+          <button class="button button--primary" id="begin-story" type="button">Comenzar <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="scroll-cue" aria-hidden="true">Desliza para continuar</p>
+      </section>
+
+      <section class="chapter chapter--destiny" id="chapter-2" data-chapter="2" aria-labelledby="destiny-title">
+        <div class="chapter__content chapter__content--center">
+          <p class="eyebrow">El reencuentro</p>
+          <h2 id="destiny-title">Algunas rutas se alejan<br />para aprender a volver.</h2>
+          <div class="meeting-lights" aria-hidden="true"><span></span><i></i><b>♥</b></div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--dreams" id="chapter-3" data-chapter="3" aria-labelledby="dreams-title">
+        <div class="dream-sky" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="chapter__content chapter__content--narrow">
+          <p class="eyebrow">Las señales</p>
+          <h2 id="dreams-title">La noche dejó tres destellos.<br />El último abrió el camino.</h2>
+        </div>
+      </section>
+
+      <section class="chapter chapter--beginning" id="chapter-4" data-chapter="4" aria-labelledby="beginning-title">
+        <div class="chapter__content">
+          <p class="eyebrow">Volver a empezar</p>
+          <h2 id="beginning-title">Y, sin darnos cuenta,<br />todo volvió a comenzar.</h2>
+          <div class="word-sequence" aria-label="Los pequeños comienzos">
+            <span>Una conversación.</span><span>Una sonrisa.</span><span>Una cita.</span><span>Un abrazo.</span>
+          </div>
+        </div>
+        <div class="photo-collage" aria-label="Espacio para sus fotografías">
+          <figure><img src="assets/images/momento-01.webp" alt="Recuerdo juntos 1" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/images/momento-02.jpg" alt="Recuerdo juntos 2" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/images/momento-03.webp" alt="Recuerdo juntos 3" loading="lazy" decoding="async" /></figure>
+        </div>
+      </section>
+
+      <section class="chapter chapter--gallery" id="chapter-5" data-chapter="5" aria-labelledby="gallery-title">
+        <div class="chapter__content chapter__content--center">
+          <p class="eyebrow">Lo cotidiano</p>
+          <h2 id="gallery-title">No fueron los lugares.<br />Fueron los momentos.</h2>
+        </div>
+        <div class="gallery" aria-label="Momentos juntos">
+          <button class="gallery-card gallery-card--large" type="button" data-image="assets/images/galeria-01.webp" data-alt="Momento juntos 1" data-caption="Un instante que se quedó con nosotros."><img src="assets/images/galeria-01.webp" alt="Momento juntos 1" loading="lazy" decoding="async" /><span aria-hidden="true">Ver recuerdo</span></button>
+          <button class="gallery-card" type="button" data-image="assets/images/galeria-02.webp" data-alt="Momento juntos 2" data-caption="La alegría estaba en lo sencillo."><img src="assets/images/galeria-02.webp" alt="Momento juntos 2" loading="lazy" decoding="async" /><span aria-hidden="true">Ver recuerdo</span></button>
+          <button class="gallery-card" type="button" data-image="assets/images/galeria-03.webp" data-alt="Momento juntos 3" data-caption="Una razón más para sonreír."><img src="assets/images/galeria-03.webp" alt="Momento juntos 3" loading="lazy" decoding="async" /><span aria-hidden="true">Ver recuerdo</span></button>
+          <button class="gallery-card gallery-card--wide" type="button" data-image="assets/images/galeria-04.webp" data-alt="Momento juntos 4" data-caption="Nuestro lugar favorito: juntos."><img src="assets/images/galeria-04.webp" alt="Momento juntos 4" loading="lazy" decoding="async" /><span aria-hidden="true">Ver recuerdo</span></button>
+        </div>
+        <p class="chapter-note">La felicidad estaba en lo cotidiano.</p>
+      </section>
+
+      <section class="chapter chapter--choice" id="chapter-6" data-chapter="6" aria-labelledby="choice-title">
+        <div class="choice-symbol" aria-hidden="true"><span></span></div>
+        <div class="chapter__content chapter__content--center">
+          <p class="eyebrow">Elegirnos</p>
+          <h2 id="choice-title">No hizo falta prometer el mundo.<br />Bastó con elegirnos.</h2>
+        </div>
+      </section>
+
+      <section class="chapter chapter--distance" id="chapter-7" data-chapter="7" aria-labelledby="distance-title">
+        <div class="chapter__content chapter__content--center">
+          <p class="eyebrow">Cerca a la distancia</p>
+          <h2 id="distance-title">Hay kilómetros entre nosotros.<br />Pero nunca han podido alejarnos.</h2>
+          <div class="distance-map" aria-label="Una conexión entre San Lorenzo y Silvia">
+            <span class="map-point map-point--origin"><b>San Lorenzo</b></span>
+            <svg viewBox="0 0 500 120" aria-hidden="true"><path d="M45 70 C180 -15 310 145 455 42" /></svg>
+            <span class="map-point map-point--destination"><b>Silvia</b></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--film" id="chapter-8" data-chapter="8" aria-labelledby="film-title">
+        <div class="chapter__content chapter__content--center">
+          <p class="eyebrow">Para ti</p>
+          <h2 id="film-title">Hay cosas que solo<br />podía decirte así.</h2>
+          <div class="premium-player" id="premium-player">
+            <video id="love-video" preload="metadata" poster="assets/images/video-poster.webp" playsinline>
+              <source src="assets/videos/video-principal.mp4" type="video/mp4" />
+              Tu navegador no puede reproducir este video.
+            </video>
+            <button class="player-start" id="player-start" type="button" aria-label="Reproducir video"><span aria-hidden="true">▶</span></button>
+            <div class="player-controls" id="player-controls" aria-label="Controles del video">
+              <button class="player-control" id="video-toggle" type="button" aria-label="Reproducir video">▶</button>
+              <span class="player-time" id="video-time">0:00 / 0:00</span>
+              <input class="player-progress" id="video-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Progreso del video" />
+              <button class="player-control" id="video-mute" type="button" aria-label="Silenciar video">⌁</button>
+              <button class="player-control" id="video-fullscreen" type="button" aria-label="Ver en pantalla completa">⛶</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--thanks" id="chapter-9" data-chapter="9" aria-labelledby="thanks-title">
+        <div class="falling-stars" aria-hidden="true"></div>
+        <div class="chapter__content chapter__content--center">
+          <p class="eyebrow">Siempre</p>
+          <h2 id="thanks-title" class="thanks-copy"><span>Gracias por regresar.</span><span>Gracias por quedarte.</span><span>Gracias por elegirme.</span></h2>
+          <button class="button button--primary button--final" id="open-final" type="button">Ábrelo <span aria-hidden="true">♥</span></button>
+        </div>
+      </section>
+    </main>
+
+    <div class="counter" aria-label="Tiempo desde que comenzó nuestra relación">
+      <span class="counter__label">Nuestro tiempo</span>
+      <div class="counter__units" id="relationship-counter" aria-live="polite"></div>
+    </div>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Fotografía ampliada">
+      <button class="lightbox__close" type="button" aria-label="Cerrar fotografía">×</button>
+      <button class="lightbox__arrow lightbox__arrow--previous" type="button" aria-label="Ver recuerdo anterior">←</button>
+      <img src="" alt="" id="lightbox-image" />
+      <p id="lightbox-caption"></p>
+      <button class="lightbox__arrow lightbox__arrow--next" type="button" aria-label="Ver siguiente recuerdo">→</button>
+    </dialog>
+
+    <section class="finale" id="finale" aria-hidden="true" aria-label="Mensaje final">
+      <div class="finale__particles" aria-hidden="true"></div>
+      <p>Te amo.</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
